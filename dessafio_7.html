@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_7.css">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="teclado">
+            <br>
+            <input type="text" id= "visor2" readonly><br>
+            <label id="visor1" style="visibility: visible"></label> <br><br>
+            <button class= "numeros" id="Btn_Um"      onclick="um()">        1 </button>
+            <button class= "numeros" id="Btn_Dois"    onclick="dois()">      2 </button>
+            <button class= "numeros" id="Btn_Tres"    onclick="tres()">      3 </button> 
+            <button class="operadores" id="Btn_Mais"  onclick="soma()">      + </button> <br> <br>
+            <button class= "numeros" id="Btn_Quatro"  onclick="quatro()">    4 </button> 
+            <button class= "numeros" id="Btn_Cinco"   onclick="cinco()">     5 </button>
+            <button class= "numeros" id="Btn_Seis"    onclick="seis()">      6 </button> 
+            <button class="operadores" id="Btn_Menos" onclick="subtrai()" >  - </button> <br> <br>
+            <button class= "numeros" id="Btn_Sete"    onclick="sete()">      7 </button> 
+            <button class= "numeros" id="Btn_Oito"    onclick="oito()">      8 </button>
+            <button class= "numeros" id="Btn_Nove"    onclick="nove()">      9 </button> 
+            <button class="operadores" id="Btn_Vezes" onclick="multiplica()"> x </button><br> <br>
+            <button class= "numeros" id="Btn_Zero"    onclick="zero()">       0 </button>
+            <button class= "numeros" id="Btn_Zero"    onclick="virgula()">    , </button>
+            <button class= "numeros" id="Btn_Zero"    onclick="apaga()">      ← </button> 
+            <button class="operadores" id="Btn_Divide"  onclick="divide()" >    ÷ </button>
+        </div>
+        <div class="btn_conteiner">
+                <br> 
+                <button class="botoes" id="resultado" onclick="resultado()" >Resultado</button>
+                <button class="botoes"  id="limpa" onclick ="limpa2()" >Limpar</button>
+                <button class="botoes" id="sair" onclick="sair()" > Sair</button>
+             </div>
+        </div>
+    </div>
+    <script src="java_7.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="estilo_5.css">
+
+</head>
+<body>
+    <div class="compras">
+        <h1>Vamos as Compras</h1>
+        <button id="iniciar" onclick="irCompras()"> Iniciar Compras</button>
+     </div>
+     
+     <div>
+        <div id="mensagemFinal" style ="visibility: hidden;"></div>
+        <h1 id='informe' style="visibility: hidden;">Informe o produto que deseja comprar :</h1>
+        <form>
+            <label id='L_produto' for="produto" style="visibility: hidden;">Qual o nome  do produto ?</label><br>
+            <input id='produto' style="visibility: hidden;"> <br><br><br>    
+            <label id='L_categoria' for="produto"  style="visibility: hidden;">Selecione a sessão deste produto: </label><br><br>
+            <input type="radio" id="congelados" name="categoria" value="Congelados"  style="visibility: hidden;">
+            <label id='L_congelados' for="Congelados"  style="visibility: hidden;">Congelados</label><br>
+            <input type="radio" id="frutas" name="categoria" value="Frutas"  style="visibility: hidden;">
+            <label id='L_frutas' for="Frutas"  style="visibility: hidden;">Frutas</label><br>
+            <input type="radio" id="laticinios" name="categoria" value="Laticíonios" style="visibility: hidden;"  >
+            <label id='L_laticinios' for="Laticinios" style="visibility: hidden;" >Laticíonios</label><br><br><br>
+        </form>
+        <div class="btn"> 
+            <button id="Incluir" onclick="Incluir()" style="visibility: hidden;" >Adicionar a Lista</button>
+            <button id="remover" onclick="Remove()" style="visibility: hidden;">Remover da Lista</button>
+            <button id="finaliza" onclick="Finaliza()" style="visibility: hidden;">Vizualizar Lista</button>
+         </div>   
+        
+     </div>
+     <script src="java_5.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Questionário</title>
+    <link rel="stylesheet" href="estilo_2.css">
+</head>
+<body>
+    <h1>Responda as Perguntas:</h1>
+    <form id="perguntasForm">
+        <label for="nome">Qual o seu nome?</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Quantos anos você tem?</label>
+        <input type="number" id="idade" name="idade" required>
+
+        <label for="linguagem">Qual linguagem de programação você está estudando?</label>
+        <input type="text" id="linguagem" name="linguagem" required>
+
+        <button type="button" onclick="processarRespostas()">Enviar</button>
+    </form>
+    <script src="java_2.js"></script>
+</body>
+</html>
